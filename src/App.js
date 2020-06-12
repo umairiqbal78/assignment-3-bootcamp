@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 
 import './App.css';
-import Myintro from './intro.js';
+// import Myintro from './intro.js';
 
-export default function App() {
+function App() {
   let [count,setCount] = useState(1);
 
   return (
