@@ -1,14 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './App.css';
 import Myintro from './intro.js';
 
-function App() {
+export default function App() {
+  let [count,setCount] = useState(1);
+
   return (
-    <div className="App">
-      <Myintro name="umair" institute="PIAIC" course="AI" roll_num="AIC003677" batch="1"/>
+    <div>
+      <h3>the value of counter is {count}</h3>
+      <button onClick ={
+        ()=> setCount(2)
+      }>
+        update counter
+        </button>
     </div>
-  );
+  )
 }
 
 export default App;
